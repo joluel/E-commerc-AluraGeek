@@ -79,12 +79,14 @@
 }
 
 .banner__titulo {
+    margin-bottom: 20px;
     font-size: 2.8rem;
     color: white;
 }
 
 .banner__descripcion {
     color: white;
+    margin-bottom: 15PX;
 }
 
 .banner__btn-consolas {
@@ -169,17 +171,18 @@
 
 .rodapie {
     height: 50vh;
-    border: 2px solid red;
 }
 
 .footer {
+    display: block;
     height: 60vh;
     background-color: #EAF2FD;
 }
 
 .footer__container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .footer__logo {
@@ -202,25 +205,64 @@
     height: 20%;
     text-decoration: none;
     text-align: center;
-    color: black;
+    color: #2A7AE4;
 }
 
 .footer__contacto {
-    display: grid;
+    display: flex;
     flex-direction: column;
     width: 28%;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .footer__titulo{
+    padding: 10px 0;
+    font-size: 16px;
 }
 
 .footer__nombre{
-    width: 93%;
+    width: 94.59%;
     padding: 10px;
     text-align: justify;
     background-color: white;
+    font-size: 14px;
+    color: gray;
+}
 
+.footer__input{
+    padding: 5px 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.footer__textarea {
+    margin-bottom: 20px;
+    padding: 20px 0 0 10px;
+    border: none;
+}
+
+.footer__btn-enviar-mensaje {
+    width: 70%;
+    padding: 10px 50px;
+    background-color: #2A7AE4;
+    color: #FFF;
+    border: 1px solid #2A7AE4;
+    transition: .5s all ease-in-out;
+}
+
+.footer__btn-enviar-mensaje:hover {
+    background-color: #FFF;
+    color: #2A7AE4;
+}
+
+.final {
+    padding: 20px;
+    text-align: center;
+}
+
+.final a, p {
+    margin: 0;
+    text-decoration: none;
 }
 
 @media screen and (max-width:375px) {
@@ -313,5 +355,51 @@
     
     .diversos {
         margin-top: 300px;
+    }
+
+                                                /* RODAPIE */
+
+    .rodapie{
+        margin-top: 250px;
+    }
+
+    .footer {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__logo {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    .footer__links {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .footer__contacto {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .footer__titulo{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .footer__btn-enviar-mensaje {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .final {
+        margin-top: 150px;
     }
 }
