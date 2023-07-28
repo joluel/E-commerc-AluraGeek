@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="stylesheet" href="./assets/css/01-normalize.css">
+    <link rel="stylesheet" href="./assets/css/02-reset.css">
+    <link rel="stylesheet" href="./assets/css/03-main.css">
+    <link rel="icon" href="./assets/img/Logo.png">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="cabecera__container">
+            <a href="index.html"><img class="cabecera__imagen" src="./assets/img/Logo.png" alt="logo-alura"></a>
+            <input class="cabecera__buscador" type="text" placeholder="¿Que deseas buscar?" title="Escriba el articulo que deseas buscar">
+            <a class="cabecera__lupa" href="#"><img src="./assets/icons/lupa.png" alt="lupa"></a>
+        </div>
+        <button class="cabecera__btn-login">Login</button>
+    </header>
+
+    <div class="formulario">
+        <div class="formulario-login container">
+            <h3 class="formulario-login__titulo">Iniciar Sesión</h2>
+            <form action="" class="formulario-login_form">
+                <div class="formulario-login__input-container">
+                    <input name="usuario" id="usuario" class="input inputs" type="text" placeholder="" required data-tipo="usuario" data-form-usuario>
+                    <label class="input-label" for="usuario">Escribe tu usuario</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <div class="formulario-login__input-container">
+                    <input name="contraseña" id="contraseña" class="input inputs input-contraseña" type="password" placeholder="" required   data-tipo="contraseña" data-form-contraseña>
+                    <label class="input-label" for="contraseña">Escribe tu contraseña</label>
+                    <span class="input-message-error">Este campo no es valido</span>
+                </div>
+                <input class="boton-formulario-login" type="submit" name="enviar" id="enviar-login" value="Entrar">
+            </form>
+        </div>
+    </div>
+
+
+    <section class="rodapie">
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__logo"><img src="./assets/img/Logo.png" alt="logo"></div>
+                <div class="footer__links">
+                    <a class="footer__link" href="#">Quienes Somos</a>
+                    <a class="footer__link" href="#">Politicas de seguridad</a>
+                    <a class="footer__link" href="#">Programa de fidelidad</a>
+                    <a class="footer__link" href="#">Nuestras tiendas</a>
+                    <a class="footer__link" href="#">Quiero ser franquiciado</a>
+                    <a class="footer__link" href="#">Anuncie aqui!</a>
+                </div>
+                <div class="footer__contacto">
+                    <form action="#">
+                        <h2 class="footer__titulo">Hable con nosostros</h2>
+                        <label class="footer__nombre" for="nombre">Nombre</label>
+                        <input class="footer__input" id="nombre" type="text" required placeholder="Carlos J. Gonzalez C.">
+                        <textarea class="footer__textarea" name="text-area" id="" cols="20" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                        <button class="footer__btn-enviar-mensaje">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="final">
+            <a href="#"><p>Creado por Carlos J. Gonzalez C.</p></a>
+            <p>2023.</p>
+        </div>
+    </section>
+</body>
+</html>

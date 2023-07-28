@@ -16,7 +16,7 @@
             <input class="cabecera__buscador" type="text" placeholder="¿Que deseas buscar?" title="Escriba el articulo que deseas buscar">
             <a class="cabecera__lupa" href="#"><img src="./assets/icons/lupa.png" alt="lupa"></a>
         </div>
-        <button class="cabecera__btn-login">Login</button>
+        <a class="cabecera__btn-login" href="formulario.html">Login</a>
     </header>
 
     <section class="banner">
@@ -190,11 +190,13 @@
                     <a class="footer__link" href="#">Anuncie aqui!</a>
                 </div>
                 <div class="footer__contacto">
-                    <h2 class="footer__titulo">Hable con nosostros</h2>
-                    <label class="footer__nombre" for="#">Nombre</label>
-                    <input class="footer__input" type="text" required placeholder="Carlos J. Gonzalez C.">
-                    <textarea class="footer__textarea" name="text-area" id="" cols="20" rows="5" placeholder="Escribe tu mensaje"></textarea>
-                    <button class="footer__btn-enviar-mensaje">Enviar mensaje</button>
+                    <form action="#">
+                        <h2 class="footer__titulo">Hable con nosostros</h2>
+                        <label class="footer__nombre" for="nombre">Nombre</label>
+                        <input class="footer__input" id="nombre" type="text" required placeholder="Carlos J. Gonzalez C.">
+                        <textarea class="footer__textarea" name="text-area" id="" cols="20" rows="5" placeholder="Escribe tu mensaje"></textarea>
+                        <button class="footer__btn-enviar-mensaje">Enviar mensaje</button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -47,6 +47,7 @@
     color: #2A7AE4;
     border: 1px solid #2A7AE4;
     transition: .5s all ease-in-out;
+    text-decoration: none;
 }
 
 .cabecera__btn-login:hover {
@@ -175,7 +176,7 @@
 
 .footer {
     display: block;
-    height: 60vh;
+    height: 50vh;
     background-color: #EAF2FD;
 }
 
@@ -192,19 +193,23 @@
 }
 
 .footer__links{
-    display: grid;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 28%;
-    height: 50vh;
+    /* height: 50vh; */
     margin-top: 30px;
 }
 
 .footer__link {
-    width: 100%;
-    height: 20%;
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    padding: 10px 0;
+    margin: 0 auto;
     text-align: center;
+    text-decoration: none;
     color: #2A7AE4;
 }
 
@@ -263,6 +268,214 @@
 .final a, p {
     margin: 0;
     text-decoration: none;
+}
+
+                                        /* FORMULARIO.HTML */
+
+.formulario{
+    width: 100%;
+    background-color: #f5f5f5;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.formulario-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-login_form{
+    width: 40%;
+}
+
+.formulario-login__titulo{
+	margin-bottom: 3rem;
+	font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.form__label {
+	margin-bottom: 1rem;
+}
+
+
+.formulario-login__input-container {
+	position: relative;
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	box-sizing: border-box;
+}
+  
+.input {
+	background-color: #fff;
+	border: none;
+	box-sizing: border-box;
+	border-bottom: 1px solid #2A7AE4;
+	padding: 1.375rem 0.5rem 0.5rem;
+	height: 3.25rem;
+	width: 100%;
+}
+
+  
+.input::placeholder {
+	visibility: hidden;
+	color: #00000000;
+}
+  
+.input:focus {
+    outline: none;
+}
+  
+.input-label {
+	position: absolute;
+	top: 1.375rem;
+	left: 0.5rem;
+
+	transition: all 0.25s;
+}
+  
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+	font-size: 0.875rem;
+	top: 0.25rem;
+	transition: all 0.25s;
+}
+  
+.input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+  
+.input-container--invalid .input {
+	border: 1px solid red;
+	border-radius: 7px;
+}
+
+.input-container--invalid .input-label {
+	color: red;
+}
+
+.input-message-error {
+	display: none;
+}
+
+.input-container--invalid .input-message-error {
+	color: red;
+	display: block;
+	margin-top: 0.5rem;
+	padding-left: 0.5rem;
+}
+
+.input-label {
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+	transition: all 0.25s;
+}
+
+.input-container--invalid .textarea {
+	border: 1px solid red;
+}
+
+.textarea-container--invalid .input-label {
+	color: red;
+}
+
+.textarea-mensagem-erro {
+	display: none;
+}
+
+.textarea-container--invalid .textarea-mensagem-erro {
+	display: block;
+	color: red;
+	margin-top: 0.5rem;
+	padding-left: 0.5rem;
+}
+
+.boton-formulario-login{
+	border-radius: 5px;
+	padding: 1rem 2rem;
+	color: #ffffff;
+	background-color: #2A7AE4;
+	font-weight: 500;
+	border: none;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.boton-formulario-login:hover{
+	box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.35);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .cabecera {
+        /* flex-direction: column; */
+    }
+
+    .cabecera__container {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .cabecera__buscador {
+        width: 70%;
+        padding: 10px;
+        border-radius: 2rem;
+    }
+
+    .cabecera__lupa {
+        position: absolute;
+        top: 111px;
+        left: 360px;
+        width: 3%;
+        height: 1%;
+    }
+
+    /* BANNER */
+
+    .banner__info {
+        height: 17vh;
+    }
+
+    /* PRODUCTOS */
+
+    .star__wars {
+        height: 28vh;
+    }
+
+    .starWars__ocultar {
+        display: none;
+    }
+
+    .rodapie{
+        height: 50vh;
+    }
+    
+    .footer {
+        height: 50vh;
+    }
+
+    .footer__nombre{
+        width: 89.59%;
+    }
+
+    .footer__logo {
+        width: 25%;
+    }
+
+    .footer__links {
+        width: 25%;
+    }
+
+    .footer__contacto {
+        width: 25%;
+    }
 }
 
 @media screen and (max-width:375px) {
@@ -386,7 +599,7 @@
     .footer__contacto {
         width: 100%;
         margin: 0 auto;
-        margin-bottom: 50px;
+        /* margin-bottom: 50px; */
     }
 
     .footer__titulo{
@@ -394,12 +607,21 @@
         text-align: center;
     }
 
+    .footer__textarea {
+        margin-bottom: 30px;
+    }
+
     .footer__btn-enviar-mensaje {
         margin: 0 auto;
+        margin-top: 30px;
         text-align: center;
     }
 
     .final {
-        margin-top: 150px;
+        margin-top: 130px;
+    }
+    .final a, p {
+        color: #2A7AE4;
+        margin-bottom: 10px;
     }
 }
