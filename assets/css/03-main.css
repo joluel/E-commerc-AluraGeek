@@ -29,6 +29,7 @@
     border: none;
     font-size: 14px;
     color: gray;
+    outline: none;
 }
 
 .cabecera__lupa {
@@ -107,7 +108,7 @@
 
 .star__wars {
     width: 80%;
-    height: 35vh;
+    height: 25vh;
     margin: 0 auto;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -226,7 +227,8 @@
 }
 
 .footer__nombre{
-    width: 94.59%;
+    display: block;
+    width: 93.39%;
     padding: 10px;
     text-align: justify;
     background-color: white;
@@ -235,15 +237,21 @@
 }
 
 .footer__input{
+    display: block;
+    width: 96.4%;
     padding: 5px 5px;
     border: none;
     margin-bottom: 10px;
+    outline: none;
+    background-color: white;
 }
 
 .footer__textarea {
+    width: 96.4%;
     margin-bottom: 20px;
     padding: 20px 0 0 10px;
     border: none;
+    outline: none;
 }
 
 .footer__btn-enviar-mensaje {
@@ -309,7 +317,7 @@
 	justify-content: flex-end;
 	box-sizing: border-box;
 }
-  
+
 .input {
 	background-color: #fff;
 	border: none;
@@ -320,35 +328,33 @@
 	width: 100%;
 }
 
-  
 .input::placeholder {
 	visibility: hidden;
 	color: #00000000;
 }
-  
+
 .input:focus {
     outline: none;
 }
-  
+
 .input-label {
 	position: absolute;
 	top: 1.375rem;
 	left: 0.5rem;
-
 	transition: all 0.25s;
 }
-  
+
 .input:not(:placeholder-shown) + .input-label,
 .input:focus + .input-label {
 	font-size: 0.875rem;
 	top: 0.25rem;
 	transition: all 0.25s;
 }
-  
+
 .input-container--invalid {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
-  
+
 .input-container--invalid .input {
 	border: 1px solid red;
 	border-radius: 7px;
@@ -409,6 +415,120 @@
 .boton-formulario-login:hover{
 	box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.35);
 	cursor: pointer;
+}
+
+                                            /* TODOS LOS PRODUCTOS */
+
+.productos {
+    width: 98.5%;
+    height: 80vh;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: rgb(238, 238, 238);
+}
+
+.productos__encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+.productos__btn{
+    display: block;
+    padding: 10px;
+    background-color: #2A7AE4;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: 1px solid #2A7AE4;
+    transition: .4s all ease-in-out;
+}
+
+.productos__btn:hover{
+    background-color: white;
+    color: #2A7AE4;
+
+}
+
+.productos__cajas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px;
+    
+}
+
+
+.productos__caja {
+    width: 180px;
+    height: 180px;
+    margin: 20px;
+    transition: .4s all ease-in-out;
+}
+
+.productos__caja:hover {
+    box-shadow: 5px 5px 10px rgb(238, 238, 238);
+    transform: scale(1.1);
+}
+
+.productos__caja img{
+    width: 100%;
+    height: 60%;
+}
+
+                                                    /* AGREGAR PRODUCTOS */
+
+.agregar {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(238, 238, 238);
+}
+
+.agregar__container {
+    width: 70%;
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.agregar__container label{
+    display: block;
+    width: 50%;
+    padding: 5px;
+    font-size: 12px;
+    color: #A2A2A2;
+    margin: 0 auto;
+    background-color: white;
+    text-align: left;
+}
+
+.agregar__container input {
+    margin-bottom: 20px;
+    width: 50%;
+    padding: 5px;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.agregar__titulo {
+    margin: 30px 0;
+}
+
+.agregar__text-area {
+    width: 50%;
+    font-size: 12px;
+    color: #A2A2A2;
+    border: 0px solid transparent;
+    outline: none;
 }
 
 @media screen and (max-width: 768px) {
