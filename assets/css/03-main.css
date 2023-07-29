@@ -532,9 +532,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    .cabecera {
-        /* flex-direction: column; */
-    }
 
     .cabecera__container {
         flex-direction: column;
