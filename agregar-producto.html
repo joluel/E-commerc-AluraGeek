@@ -22,16 +22,15 @@
     <section class="agregar">
         <div class="agregar__container">
             <h2 class="agregar__titulo">Agregar nuevo producto</h2>
-            <form class="agregar__form" action="#">
+            <form class="agregar__form" action="#" data-form>
                 <label for="">URL de imagen</label>
-                <input type="url">
-                <label for="">Categoria</label>
-                <input type="text">
+                <input type="url" data-url>
                 <label for="">Nombre del producto</label>
-                <input type="text">
+                <input type="text" data-nombre>
                 <label for="">Precio del producto</label>
-                <input type="text"> <br>
-                <textarea class="agregar__text-area" name="descripcion" id="" cols="30" rows="3" placeholder="Descripcion del producto"></textarea>
+                <input type="text" data-precio><br>
+                <input type="submit" value="enviar">
+                <!-- <button ></button> -->
             </form>
         </div>
     </section>
@@ -40,7 +39,7 @@
 
 
 
-    <section class="rodapie">
+    <!-- <section class="rodapie">
         <div class="footer">
             <div class="footer__container">
                 <div class="footer__logo"><img src="./assets/img/Logo.png" alt="logo"></div>
@@ -67,7 +66,7 @@
             <a href="#"><p>Creado por Carlos J. Gonzalez C.</p></a>
             <p>2023.</p>
         </div>
-    </section>
-    
+    </section> -->
+    <script type="module" src="controllers/crea-producto-controller.js"></script>
 </body>
 </html>

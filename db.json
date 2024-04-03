@@ -1,0 +1,65 @@
+{
+  "producto": [
+    {
+      "name": "Alura latam",
+      "imageUrl": "https://i.blogs.es/ed843e/superpc-ap/1366_2000.jpeg",
+      "price": "1.000.000",
+      "descripcion": "",
+      "id": "1a08"
+    },
+    {
+      "name": "Alura latam",
+      "imageUrl": "https://images.unsplash.com/photo-1640955014216-75201056c829?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "1.230.000",
+      "descripcion": "",
+      "id": "aa05"
+    },
+    {
+      "name": "Alura latam",
+      "imageUrl": "https://images.unsplash.com/photo-1635514569146-9a9607ecf303?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "4.320.000",
+      "descripcion": "",
+      "id": "2784"
+    },
+    {
+      "name": "Alura latam",
+      "imageUrl": "https://images.unsplash.com/photo-1593640408182-31c70c8268f5?q=80&w=1442&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "1.520.000",
+      "descripcion": "",
+      "id": "e2b6"
+    },
+    {
+      "name": "Alura latam",
+      "imageUrl": "https://images.unsplash.com/photo-1643966398552-0bb0bf0c78cf?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "2.230.000",
+      "descripcion": "",
+      "id": "476d"
+    },
+    {
+      "name": "Alura latam",
+      "imageUrl": "https://images.unsplash.com/photo-1625842268584-8f3296236761?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "3.500.000",
+      "descripcion": "",
+      "id": "1a23"
+    },
+    {
+      "name": "Alura latam",
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1680124606469-96f116494bf6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "price": "5.500.000",
+      "descripcion": "",
+      "id": "e8a5"
+    },
+    {
+      "id": "e8e2",
+      "name": "prueba 1",
+      "imageUrl": "https://i.blogs.es/ed843e/superpc-ap/1366_2000.jpeg",
+      "price": "1020"
+    },
+    {
+      "id": "d0e3",
+      "name": "alura prueba 2",
+      "imageUrl": "http://127.0.0.1:5501/assets/img/Logo.png",
+      "price": "1033"
+    }
+  ]
+}
